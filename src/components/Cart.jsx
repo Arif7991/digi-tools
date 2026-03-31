@@ -23,12 +23,9 @@ const Cart = ({ cartItems, removeFromCart, clearCart }) => {
       <div className="space-y-4">
         {cartItems.map((item) => (
           <div key={item.id} className="flex items-center justify-between p-4 bg-base-100 rounded-lg shadow">
-            <div className="flex items-center gap-4">
-              <span className="text-2xl">{item.icon}</span>
-              <div>
-                <h3 className="font-bold">{item.name}</h3>
-                <p className="text-sm text-gray-500">${item.price} / {item.period}</p>
-              </div>
+            <div>
+              <h3 className="font-bold">{item.name}</h3>
+              <p className="text-sm text-gray-500">${item.price.toFixed(2)}</p>
             </div>
             <button
               className="btn btn-sm btn-outline btn-error"

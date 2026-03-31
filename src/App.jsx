@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import PremiumTools from "./components/PremiumTools";
+import MainSection from "./components/MainSection";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
 import CTA from "./components/CTA";
@@ -27,7 +27,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar cartCount={cartItems.length} />
       <Banner />
-      <PremiumTools
+      <MainSection
         cartItems={cartItems}
         addToCart={addToCart}
         removeFromCart={removeFromCart}
