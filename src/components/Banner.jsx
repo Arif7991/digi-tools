@@ -24,7 +24,7 @@ const Banner = () => {
       {/* Stats Section */}
       <div className="stats stats-vertical lg:stats-horizontal shadow w-full my-12">
         <div className="stat">
-          <div className="stat-value">50K+</div>
+          <div className="stat-value">60K+</div>
           <div className="stat-title">Active Users</div>
         </div>
         <div className="stat">
