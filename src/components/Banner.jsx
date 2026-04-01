@@ -1,43 +1,44 @@
-import React from "react";
 
-const Banner = () => {
+import { CiPlay1 } from 'react-icons/ci';
+import BannerImg from '../assets/products/banner.png'
+
+export default function Banner() {
   return (
-    <>
-      <div id="home" className="hero min-h-[600px] bg-base-100">
-        <div className="hero-content text-center">
-          <div className="max-w-3xl">
-            <div className="badge badge-primary mb-4">New: All-Powered Tools Available</div>
-            <h1 className="text-5xl font-bold">Supercharge Your Digital Workflow</h1>
-            <p className="py-6 text-lg">
-              Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
-            </p>
-            <div className="flex justify-center gap-4">
-              <button className="btn btn-primary" onClick={() => document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })}>
-                Explore Products
-              </button>
-              <button className="btn btn-outline">Watch Demo</button>
-            </div>
+    <div className="bg-linear-to-b from-white to-purple-50 px-5 md:px-10 py-14">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p className="bg-blue-100 text-purple-700 p-2 inline-block rounded-full mb-3 tracking-wide">
+            <div className="badge bg-purple-500 badge-xs text-sm mr-1.5"></div>New: AI-Powered Tools Available
+          </p>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Supercharge Your <br /> Digital Workflow
+          </h1>
+
+          <p className="text-gray-600 mt-4 leading-relaxed max-w-md">
+            Discover premium tools to boost productivity, build smarter
+            workflows, and grow your business faster with confidence.
+          </p>
+
+          <div className="flex gap-4 mt-7">
+            <button className="btn bg-purple-600 hover:bg-purple-700 text-white rounded-full px-8">
+              Explore Products
+            </button>
+
+            <button className="btn btn-outline border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-full px-8">
+                  <CiPlay1 />Watch Demo
+            </button>
           </div>
         </div>
-      </div>
 
-      {/* Stats Section */}
-      <div className="stats stats-vertical lg:stats-horizontal shadow w-full my-12">
-        <div className="stat">
-          <div className="stat-value">60K+</div>
-          <div className="stat-title">Active Users</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">200+</div>
-          <div className="stat-title">Premium Tools</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">4.9</div>
-          <div className="stat-title">Rating</div>
+        <div className="flex justify-center">
+          <img
+            className="rounded-2xl shadow-lg w-full max-w-sm"
+            src={BannerImg}
+            alt="banner"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default Banner;
+}
