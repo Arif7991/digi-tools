@@ -1,3 +1,5 @@
+import { FaCheck } from "react-icons/fa";
+
 export default function Pricing() {
   return (
     <div className="bg-white py-20">
@@ -22,10 +24,10 @@ export default function Pricing() {
             </h2>
 
             <ul className="mt-6 space-y-3 text-sm text-gray-600">
-              <li>✅ Access to 10 free tools</li>
-              <li>✅ Basic templates</li>
-              <li>✅ Community support</li>
-              <li>✅ 1 project per month</li>
+              < li className="flex gap-1 items-center"><FaCheck /> Access to 10 free tools</ li>
+              < li className="flex gap-1 items-center"><FaCheck /> Basic templates</ li>
+              < li className="flex gap-1 items-center"><FaCheck /> Community support</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> 1 project per month</ li >
             </ul>
 
             <button className="btn bg-purple-600 hover:bg-purple-700 text-white rounded-full w-full mt-8">
@@ -49,12 +51,12 @@ export default function Pricing() {
             </h2>
 
             <ul className="mt-6 space-y-3 text-sm">
-              <li>✅ Access to all premium tools</li>
-              <li>✅ Unlimited templates</li>
-              <li>✅ Priority support</li>
-              <li>✅ Unlimited projects</li>
-              <li>✅ Cloud sync</li>
-              <li>✅ Advanced analytics</li>
+              < li className="flex gap-1 items-center"><FaCheck /> Access to all premium tools</ li>
+              < li className="flex gap-1 items-center"><FaCheck /> Unlimited templates</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> Priority support</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> Unlimited projects</ li>
+              < li className="flex gap-1 items-center"><FaCheck /> Cloud sync</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> Advanced analytics</ li>
             </ul>
 
             <button className="btn bg-white text-purple-700 hover:bg-gray-200 rounded-full w-full mt-8">
@@ -74,12 +76,12 @@ export default function Pricing() {
             </h2>
 
             <ul className="mt-6 space-y-3 text-sm text-gray-600">
-              <li>✅ Everything in Pro</li>
-              <li>✅ Team collaboration</li>
-              <li>✅ Custom integrations</li>
-              <li>✅ Dedicated support</li>
-              <li>✅ SLA guarantee</li>
-              <li>✅ Custom branding</li>
+              < li className="flex gap-1 items-center"><FaCheck /> Everything in Pro</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> Team collaboration</ li >
+              < li className="flex gap-1 items-center"><FaCheck /> Custom integrations</ li>
+              < li className="flex gap-1 items-center"><FaCheck /> Dedicated support</ li>
+              <li li className="flex gap-1 items-center"><FaCheck /> SLA guarantee</li>
+              < li className="flex gap-1 items-center"><FaCheck /> Custom branding</ li>
             </ul>
 
             <button className="btn bg-purple-600 hover:bg-purple-700 text-white rounded-full w-full mt-8">
