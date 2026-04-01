@@ -1,10 +1,10 @@
-
-import { CiPlay1 } from 'react-icons/ci';
+import React from "react";
+import { CiPlay1 } from "react-icons/ci";
 import BannerImg from '../assets/products/banner.png'
-
-export default function Banner() {
+const Banner = () => {
   return (
-    <div className="bg-linear-to-b from-white to-purple-50 px-5 md:px-10 py-14">
+    <>
+      <div className="bg-linear-to-b from-white to-purple-50 px-5 md:px-10 py-14">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
           <p className="bg-blue-100 text-purple-700 p-2 inline-block rounded-full mb-3 tracking-wide">
@@ -40,5 +40,8 @@ export default function Banner() {
         </div>
       </div>
     </div>
+    </>
   );
-}
+};
+
+export default Banner;
