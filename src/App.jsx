@@ -1,45 +1,53 @@
-import React, { useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import MainSection from "./components/MainSection";
+import Stats from "./components/Stats";
+import ToggleSection from "./components/ToggleSection";
 import Steps from "./components/Steps";
 import Pricing from "./components/Pricing";
-import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import WorkFlow from "./components/WorkFlow";
 
-function App() {
-  const [cartItems, setCartItems] = useState([]);
+export default function App() {
+  const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
-    setCartItems((prev) => [...prev, product]);
+  const handleAddToCart = (product) => {
+    const alreadyAdded = cart.find((item) => item.id === product.id);
+
+    if (alreadyAdded) {
+      return false;
+    }
+
+    setCart([...cart, product]);
+    return true;
   };
 
-  const removeFromCart = (id) => {
-    setCartItems((prev) => prev.filter((item) => item.id !== id));
+  const handleRemoveFromCart = (id) => {
+    const updatedCart = cart.filter((item) => item.id !== id);
+    setCart(updatedCart);
   };
 
-  const clearCart = () => {
-    setCartItems([]);
+  const handleCheckout = () => {
+    setCart([]);
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar cartCount={cartItems.length} />
+    <div className="bg-white">
+      <Navbar cartCount={cart.length} />
       <Banner />
-      <MainSection
-        cartItems={cartItems}
-        addToCart={addToCart}
-        removeFromCart={removeFromCart}
-        clearCart={clearCart}
+      <Stats />
+
+      <ToggleSection
+        cart={cart}
+        handleAddToCart={handleAddToCart}
+        handleRemoveFromCart={handleRemoveFromCart}
+        handleCheckout={handleCheckout}
       />
+
       <Steps />
       <Pricing />
-      <CTA />
+      <WorkFlow />
       <Footer />
-      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   );
 }
-
-export default App;

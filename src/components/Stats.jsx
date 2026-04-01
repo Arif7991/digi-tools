@@ -1,22 +1,22 @@
-import React from "react";
-
-const Stats = () => {
-  const stats = [
-    { label: "Projects Completed", value: "50K+" },
-    { label: "Happy Clients", value: "200+" },
-    { label: "Stars", value: "4.9" },
-  ];
-
+export default function Stats() {
   return (
-    <section className="stats stats-vertical lg:stats-horizontal shadow w-full my-12">
-      {stats.map((stat, idx) => (
-        <div className="stat" key={idx}>
-          <div className="stat-value">{stat.value}</div>
-          <div className="stat-title">{stat.label}</div>
+    <div className="bg-purple-700 py-10 text-white">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+        <div>
+          <h2 className="text-3xl font-bold">50K+</h2>
+          <p className="opacity-90">Active Users</p>
         </div>
-      ))}
-    </section>
-  );
-};
 
-export default Stats;
+        <div>
+          <h2 className="text-3xl font-bold">200+</h2>
+          <p className="opacity-90">Premium Tools</p>
+        </div>
+
+        <div>
+          <h2 className="text-3xl font-bold">4.9</h2>
+          <p className="opacity-90">User Rating</p>
+        </div>
+      </div>
+    </div>
+  );
+}

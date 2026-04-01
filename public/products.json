@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create ATS-friendly resumes with modern templates and instant export.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Planner",
+    "description": "Plan and schedule content across multiple platforms with analytics.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Auto scheduling", "Post calendar", "Team collaboration"],
+    "icon": "📅"
+  },
+  {
+    "id": 3,
+    "name": "Invoice Generator Pro",
+    "description": "Create invoices and manage payments with smart tracking tools.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Custom branding", "Auto reminders", "PDF download"],
+    "icon": "🧾"
+  },
+  {
+    "id": 4,
+    "name": "SEO Keyword Toolkit",
+    "description": "Find profitable keywords and analyze competitor SEO performance.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Keyword research", "Competitor tracking", "SEO scoring"],
+    "icon": "🔍"
+  },
+  {
+    "id": 5,
+    "name": "Video Script Writer",
+    "description": "Generate storytelling scripts for YouTube and TikTok with AI support.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Hook generator", "Story outline", "Voiceover format"],
+    "icon": "🎬"
+  },
+  {
+    "id": 6,
+    "name": "Business Proposal Kit",
+    "description": "Build business proposals quickly with professional ready templates.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Editable templates", "Modern design", "Export to PDF"],
+    "icon": "📑"
+  },
+  {
+    "id": 7,
+    "name": "AI Email Assistant",
+    "description": "Write high converting emails for marketing, business and support.",
+    "price": 18,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Smart rewriting", "Tone control"],
+    "icon": "✉️"
+  },
+  {
+    "id": 8,
+    "name": "Portfolio Website Builder",
+    "description": "Create a responsive portfolio website with fast hosting integration.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Responsive UI", "Custom domain", "Fast hosting"],
+    "icon": "🌐"
+  }
+]
